@@ -1,0 +1,35 @@
+/* Textos fijos de la invitación en español (es) e inglés (en). */
+const UI = {
+  es: { soloAdultosTxt:"Con mucho cariño te pedimos tomar en cuenta que no se permiten niños: nuestra celebración es solo para adultos.", personas:"Número de personas", tuMesa:n=>` Tu mesa es la número ${n}.`, waMesa:n=>` (Mesa ${n})`, ovGal:"Galería", galT:"Nuestros momentos", ovBien:"Bienvenidos", amorT:"Un sí para siempre", cuentaT:"La cuenta regresiva ha comenzado", ovFam:"Nuestras familias", ovCel:"La celebración", ovDia:"El gran día", ovAntes:"Antes de llegar", ovRopa:"Qué ponerse", ovCena:"La cena", ovFuera:"Si vienes de fuera", ovDetalle:"Un detalle", ovLugar:"Tu lugar", ovMom:"Momentos", hashT:"Hashtag", albumT:"Álbum de fotos", albumTxt:"Sube tus fotos y videos al grupo para guardar juntos cada abrazo.", cancionT:"Sugiere una canción", cancionTxt:"¿Qué canción no puede faltar en la pista?", desliza:"Desliza", lugaresT:"Lugares",
+    abrir:"Abrir invitación", tocaSello:"Toca el sello para abrir", tienes:"Tienes una invitación", para:"Para: ", invitamos:", con mucho cariño te invitamos", nosCasamos:"Nos casamos",
+    sample:"Datos de ejemplo · cambia nombres, fecha y lugares en el bloque CONFIG", dias:"días", horas:"horas", minutos:"minutos", segundos:"segundos",
+    addCal:"Agregar al calendario", bendicion:"Con la bendición de", donde:"Dónde y cuándo", llegar:"Cómo llegar", itin:"Itinerario", info:"Información importante",
+    vest:"Código de vestimenta", menu:"Menú", historia:"Nuestra historia", foto:"Tu foto", hosp:"Hospedaje", reservar:"Reservar", codigo:"Código de descuento",
+    copiarCod:"Copiar código", copiado:"¡Copiado!", copiaManual:"Cópialo manualmente", regalos:"Mesa de regalos", listaT:"Lista de regalos", sobresT:"Lluvia de sobres", transfer:"Transferencia bancaria",
+    copiarCta:"Copiar cuenta", rsvp:"Confirma tu asistencia", nombre:"Nombre completo", si:"Sí, ahí estaré", no:"No podré asistir", adultos:"Adultos", ninos:"Niños",
+    msg:"Mensaje para los novios (opcional)", enviar:"Confirmar por WhatsApp", antes:"Por favor confirma antes del ", reservados:n=>` Hemos reservado ${n} ${n==1?"lugar":"lugares"} para ti.`,
+    pase:"Pase de invitado", lugares:n=>`${n} ${n==1?"lugar":"lugares"}`, mesa:"Mesa", falta:"Escribe tu nombre para confirmar.", excede:n=>`Tu pase incluye ${n} ${n==1?"lugar":"lugares"} en total.`,
+    tocaEnviar:"Toca el botón para enviar tu confirmación:", abrirWa:"Abrir WhatsApp", compartir:"Comparte con nosotros",
+    shareTxt:"Usa nuestro hashtag en Instagram para compartir tus fotos.", copiarTag:"Copiar hashtag", grupo:"Unirme al álbum",
+    cancionPh:"¿Qué canción no puede faltar?", sugerir:"Sugerir canción", faltaCancion:"Escribe el nombre de la canción.", tocaCancion:"Toca para enviar tu sugerencia:",
+    teEsperamos:"¡Te esperamos!", pausa:"Pausar música", play:"Reproducir música", calTitulo:"Boda de",
+    waSi:(n,a,k,c)=>`¡Hola! Soy ${n} y confirmo mi asistencia a la boda de ${c}. Asistiremos ${a} adulto(s)${k?` y ${k} niño(s)`:""}.`,
+    waNo:(n,c)=>`Hola, soy ${n}. Con mucho cariño les aviso que no podré asistir a la boda de ${c}.`, waMsg:"Mensaje: ", waSong:s=>`¡Hola! Para la fiesta sugiero la canción: ${s}` },
+  en: { soloAdultosTxt:"With love, please note that children are not allowed: ours is an adults-only celebration.", personas:"Number of guests", tuMesa:n=>` Your table is number ${n}.`, waMesa:n=>` (Table ${n})`, ovGal:"Gallery", galT:"Our moments", ovBien:"Welcome", amorT:"A forever yes", cuentaT:"The countdown has begun", ovFam:"Our families", ovCel:"The celebration", ovDia:"The big day", ovAntes:"Before you arrive", ovRopa:"What to wear", ovCena:"Dinner", ovFuera:"Coming from out of town", ovDetalle:"A little gift", ovLugar:"Your seat", ovMom:"Moments", hashT:"Hashtag", albumT:"Photo album", albumTxt:"Add your photos and videos to the group so we can keep every hug together.", cancionT:"Suggest a song", cancionTxt:"Which song can't be missing on the dance floor?", desliza:"Scroll", lugaresT:"Seats",
+    abrir:"Open invitation", tocaSello:"Tap the seal to open", tienes:"You're invited", para:"To: ", invitamos:", we lovingly invite you", nosCasamos:"We're getting married",
+    sample:"Sample details · change names, date and places in the CONFIG block", dias:"days", horas:"hours", minutos:"minutes", segundos:"seconds",
+    addCal:"Add to calendar", bendicion:"With the blessing of", donde:"Where & when", llegar:"Get directions", itin:"Schedule", info:"Good to know",
+    vest:"Dress code", menu:"Menu", historia:"Our story", foto:"Your photo", hosp:"Where to stay", reservar:"Book", codigo:"Discount code",
+    copiarCod:"Copy code", copiado:"Copied!", copiaManual:"Please copy it manually", regalos:"Gifts", listaT:"Gift registry", sobresT:"Envelope box", transfer:"Bank transfer",
+    copiarCta:"Copy account", rsvp:"Please RSVP", nombre:"Full name", si:"Yes, I'll be there", no:"Sorry, I can't make it", adultos:"Adults", ninos:"Children",
+    msg:"Message for the couple (optional)", enviar:"Confirm via WhatsApp", antes:"Please confirm by ", reservados:n=>` We've reserved ${n} ${n==1?"seat":"seats"} for you.`,
+    pase:"Guest pass", lugares:n=>`${n} ${n==1?"seat":"seats"}`, mesa:"Table", falta:"Please enter your name.", excede:n=>`Your pass includes ${n} ${n==1?"seat":"seats"} in total.`,
+    tocaEnviar:"Tap the button to send your RSVP:", abrirWa:"Open WhatsApp", compartir:"Share with us",
+    shareTxt:"Use our hashtag on Instagram to share your photos.", copiarTag:"Copy hashtag", grupo:"Join the album",
+    cancionPh:"Which song can't be missing?", sugerir:"Suggest a song", faltaCancion:"Type the song name.", tocaCancion:"Tap to send your suggestion:",
+    teEsperamos:"We can't wait to celebrate with you!", pausa:"Pause music", play:"Play music", calTitulo:"Wedding of",
+    waSi:(n,a,k,c)=>`Hi! This is ${n}, confirming we'll attend ${c}'s wedding: ${a} adult(s)${k?` and ${k} child(ren)`:""}.`,
+    waNo:(n,c)=>`Hi, this is ${n}. Sadly I won't be able to attend ${c}'s wedding.`, waMsg:"Message: ", waSong:s=>`Hi! For the party I suggest the song: ${s}` }
+};
+
+
